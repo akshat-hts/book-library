@@ -13,7 +13,7 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options); 
-} catch (PDOExpection $e) {
+} catch (PDOException $e) {
     die("Database connection failed: " . $e->message()); 
 }
 
